@@ -77,18 +77,17 @@ readLess2.addEventListener('click', function(){
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-CHLZ29Q7QG');
+gtag('config', 'G-GMRNXFZHR5');
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAj71I1MUrbJpbuiEV9OHqLhrN9i4uYPqc",
-    authDomain: "sriram-foundation.firebaseapp.com",
-    databaseURL: "https://sriram-foundation-default-rtdb.firebaseio.com",
-    projectId: "sriram-foundation",
-    storageBucket: "sriram-foundation.appspot.com",
-    messagingSenderId: "425119094940",
-    appId: "1:425119094940:web:4047d361d00ac746373559",
-    measurementId: "G-FYLP5J3C02"
+    apiKey: "AIzaSyBW05k3w9kmp2o0aEbg9YlxoXClNN1Beq8",
+    authDomain: "sri-ram-foundation.firebaseapp.com",
+    projectId: "sri-ram-foundation",
+    storageBucket: "sri-ram-foundation.appspot.com",
+    messagingSenderId: "243712715607",
+    appId: "1:243712715607:web:dca6f96dd9b3fabe7dec12",
+    measurementId: "G-GMRNXFZHR5"
 };
 
 //   initialize firebase
@@ -123,8 +122,8 @@ const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)
         date : currentDate
     }
     newContactForm.set({detailsofUser});
-    let ownerEmail = "sriramsanthosh321@gmail.com"
-    let ownerEmail2 = "sriramsanthosh80@gmail.com"
+    let ownerEmail = "sri-ram@gmail.com"
+    let ownerEmail2 = "forget"
     let msgbody2 = `<div>
     <h2 style="font-style:">Hey ${firstName},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
     <div style = "margin:auto; padding: 0 30px; border: 2px solid lightgray; text-align: center; width:fit-content">
@@ -135,7 +134,7 @@ const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)
     <h3>Please subscribe to my youtube channel <a href="https://www.youtube.com/channel/UCqFxWlMFmpOCyjQQBmsi6-g" target="_blank" style="text-decoration:underline;">Study&nbsp;With&nbsp;Sriram</a> </h3>
         </div>`;
     Email.send({
-        SecureToken : "eae2712b-1d24-42ce-be46-e8e728dca769",
+        SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
         To : `${email}, ${ownerEmail2}`,
         From : `${ownerEmail}`,
         Subject : "Thank you for Contacting Sriram Foundation",
